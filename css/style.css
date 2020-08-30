@@ -27,8 +27,31 @@ body {
     position: relative;
 }
 
-.header__button-phone, .header__button-chat, .header__button-profile {
+.header__button-burger {
+    background-image: url("../img/icon/burger.png");
+}
+
+.header__button-phone {
+    background-image: url("../img/icon/phone.png");
     display: none;
+}
+
+.header__button-chat {
+    background-image: url("../img/icon/chat.png");
+    display: none;
+}
+
+.header__button-profile {
+    background-image: url("../img/icon/profile.png");
+    display: none;
+}
+
+.header__button-repair {
+    background-image: url("../img/icon/repair.png");
+}
+
+.header__button-checkstatus {
+    background-image: url("../img/icon/checkstatus.png");
 }
 
 .header__logo {
