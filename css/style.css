@@ -15,16 +15,17 @@ body {
     height: 88px;
 }
 
-.header > div {
-    margin: 8px;
-}
-
-.header__menu-button {
+.header__button {
     border: none;
     padding: 0;
     background: unset;
     width: 40px;
     height: 40px;
+    margin: 8px;
+}
+
+.header__logo {
+    margin: 8px;
 }
 
 .header__divider {
@@ -39,12 +40,12 @@ body {
     display: block;
 }
 
-.header__phone, .header__chat, .header__profile {
+.header__button-phone, .header__button-chat, .header__button-profile {
     display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .header__phone, .header__chat, .header__profile {
+    .header__button-phone, .header__button-chat, .header__button-profile {
         display: block;
     }
 
@@ -56,8 +57,14 @@ body {
         display: none;
     }
 
-    .header__menu + .header__divider, .header__profile + .header__divider {
+    .header__button-burger + .header__divider, .header__button-profile + .header__divider {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .header {
+        display: none;
     }
 }
 
@@ -180,5 +187,12 @@ body {
 @media screen and (min-width: 768px) {
     .content > * {
         margin: 24px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .navigation-vertical {
+        flex-wrap: wrap;
+        overflow: unset;
     }
 }
