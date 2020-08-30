@@ -7,6 +7,8 @@ body {
     background-color: #F8F8F8;
 }
 
+/* Header */
+
 .header {
     display: flex;
     align-items: center;
@@ -22,26 +24,28 @@ body {
     width: 40px;
     height: 40px;
     margin: 8px;
-}
-
-.header__logo {
-    margin: 8px;
-}
-
-.header__divider {
-    height: 32px;
-    width: 2px;
-    background: #EAEAEA;
-    border-radius: 1px;
-    display: none;
-}
-
-.header__logo + .header__divider {
-    display: block;
+    position: relative;
 }
 
 .header__button-phone, .header__button-chat, .header__button-profile {
     display: none;
+}
+
+.header__logo {
+    margin: 8px 34px 8px 8px;
+    position: relative;
+}
+
+.header__logo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -22px;
+    top: 10px;
+    height: 32px;
+    width: 2px;
+    background: #EAEAEA;
+    border-radius: 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -51,14 +55,27 @@ body {
 
     .header__logo {
         flex-grow: 1;
+        margin-right: 8px;
     }
 
-    .header__logo + .header__divider {
-        display: none;
+    .header__logo::after {
+        content: none;
     }
 
-    .header__button-burger + .header__divider, .header__button-profile + .header__divider {
+    .header__button-burger, .header__button-profile {
+        margin-right: 34px;
+    }
+
+    .header__button-burger::after, .header__button-profile::after {
+        content: "";
         display: block;
+        position: absolute;
+        right: -22px;
+        top: 4px;
+        height: 32px;
+        width: 2px;
+        background: #EAEAEA;
+        border-radius: 1px;
     }
 }
 
