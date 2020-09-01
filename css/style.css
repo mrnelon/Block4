@@ -197,11 +197,23 @@ body {
 }
 
 .content__text {
+    overflow: hidden;
+    height: 90px;
+    margin-bottom: 16px;
+}
+
+.content__paragraph {
     font-family: TT Lakes, sans-serif;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    margin-top: 0;
+    margin-bottom: 1.6em;
+}
+
+.content__paragraph:last-child {
+    margin-bottom: initial;
 }
 
 .content__read-more {
@@ -235,11 +247,27 @@ body {
     .content > * {
         margin: 24px;
     }
+
+    .content__text-box {
+        padding: 0;
+    }
+
+    .content__text {
+        height: 160px;
+    }
+
+    .content__paragraph {
+        line-height: 20px;
+    }
 }
 
 @media screen and (min-width: 1120px) {
     .navigation-vertical {
         flex-wrap: wrap;
         overflow: unset;
+    }
+
+    .content__text {
+        height: auto;
     }
 }
