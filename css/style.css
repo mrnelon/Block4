@@ -27,31 +27,43 @@ body {
     position: relative;
 }
 
-.header__button-burger {
+.button-burger {
     background-image: url("../img/icon/burger.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.header__button-phone {
+.button-phone {
     background-image: url("../img/icon/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
     display: none;
 }
 
-.header__button-chat {
+.button-chat {
     background-image: url("../img/icon/chat.png");
+    background-repeat: no-repeat;
+    background-position: center;
     display: none;
 }
 
-.header__button-profile {
+.button-profile {
     background-image: url("../img/icon/profile.png");
+    background-repeat: no-repeat;
+    background-position: center;
     display: none;
 }
 
-.header__button-repair {
+.button-repair {
     background-image: url("../img/icon/repair.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.header__button-checkstatus {
+.button-checkstatus {
     background-image: url("../img/icon/checkstatus.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header__logo {
@@ -116,8 +128,10 @@ body {
     background-color: #F8F8F8;
 }
 
-.main__title {
+.main__header {
+    display: flex;
     margin-top: 0;
+    justify-content: flex-start;
 }
 
 .title__h1--styled {
@@ -140,6 +154,26 @@ body {
     background: #41F6D7;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.main__header-button {
+    display: none;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+    align-self: center;
+    /*height: 40px;*/
+    margin: 0 24px;
+    padding: 8px 48px 8px 0;
+    background-position: center right;
+}
+
+.main__header-button span {
+
 }
 
 .main__navigation {
@@ -248,6 +282,10 @@ body {
         margin: 24px;
     }
 
+    .main__header-title {
+        margin-right: auto;
+    }
+
     .content__text-box {
         padding: 0;
     }
@@ -265,6 +303,10 @@ body {
     .navigation-vertical {
         flex-wrap: wrap;
         overflow: unset;
+    }
+
+    .main__header-button {
+        display: block;
     }
 
     .content__text {

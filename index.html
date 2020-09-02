@@ -25,14 +25,18 @@
         <div class="header__logo">
             <img src="img/logo.png" alt="Site logo" width="98" height="52">
         </div>
-        <button type="button" class="header__button header__button-phone"></button>
-        <button type="button" class="header__button header__button-chat"></button>
-        <button type="button" class="header__button header__button-profile"></button>
-        <a href="/repair" class="header__button header__button-repair"></a>
-        <a href="/checkstatus" class="header__button header__button-checkstatus"></a>
+        <button type="button" class="header__button button-phone"></button>
+        <button type="button" class="header__button button-chat"></button>
+        <button type="button" class="header__button button-profile"></button>
+        <a href="/repair" class="header__button button-repair"></a>
+        <a href="/checkstatus" class="header__button button-checkstatus"></a>
     </header>
     <main class="main">
-        <h1 class="main__title title__h1--styled">Услуги и сервисы</h1>
+        <div class="main__header">
+            <h1 class="main__header-title title__h1--styled">Услуги и сервисы</h1>
+            <a href="/repair" class="main__header-button button-repair">Оставить заявку</a>
+            <a href="/checkstatus" class="main__header-button button-checkstatus">Статус ремонта</a>
+        </div>
         <nav class="main__navigation navigation-vertical">
             <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link navigation-vertical__link_active">Ремонтируемые бренды</a></div>
             <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link">Ремонтируемые устройства</a></div>
