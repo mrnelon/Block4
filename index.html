@@ -21,29 +21,33 @@
 </head>
 <body>
     <header class="header">
-        <button type="button" class="header__button header__button-burger"></button>
-        <div class="header__logo">
-            <img src="img/logo.png" alt="Site logo" width="98" height="52">
+        <div class="header__group">
+            <button type="button" class="header__button header__button--burger"></button>
+            <div class="header__logo logo">
+                <a href="/" class="logo__link">
+                    <img src="img/logo.png" class="logo__img" alt="Site logo" width="98" height="52">
+                </a>
+            </div>
+            <a href="tel:88005553535" class="header__button header__button--phone"></a>
+            <button type="button" class="header__button header__button--chat"></button>
+            <a href="/profile" class="header__button header__button--profile"></a>
         </div>
-        <button type="button" class="header__button button-phone"></button>
-        <button type="button" class="header__button button-chat"></button>
-        <button type="button" class="header__button button-profile"></button>
-        <a href="/repair" class="header__button button-repair"></a>
-        <a href="/checkstatus" class="header__button button-checkstatus"></a>
+        <div class="header__group">
+            <a href="/repair" class="header__button header__button--repair"><span class="header__button-text">Оставить заявку</span></a>
+            <a href="/checkstatus" class="header__button header__button--checkstatus"><span class="header__button-text">Статус ремонта</span></a>
+        </div>
     </header>
     <main class="main">
-        <div class="main__header">
-            <h1 class="main__header-title title__h1--styled">Услуги и сервисы</h1>
-            <a href="/repair" class="main__header-button button-repair">Оставить заявку</a>
-            <a href="/checkstatus" class="main__header-button button-checkstatus">Статус ремонта</a>
-        </div>
-        <nav class="main__navigation navigation-vertical">
-            <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link navigation-vertical__link_active">Ремонтируемые бренды</a></div>
-            <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link">Ремонтируемые устройства</a></div>
-            <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link">Цены на услуги</a></div>
-            <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link">Адреса сервисных центров</a></div>
-            <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link">Специальные цены</a></div>
-            <div class="navigation-vertical__element"><a href="" class="navigation-vertical__link">Отзывы</a></div>
+        <h1 class="main__title title">Услуги и сервисы</h1>
+        <nav class="main__nav">
+            <ul class="main__nav-list">
+                <li class="main__nav-element"><a href="" class="main__nav-link main__nav-link--active">Ремонтируемые бренды</a></li>
+                <li class="main__nav-element"><a href="" class="main__nav-link">Ремонтируемые устройства</a></li>
+                <li class="main__nav-element"><a href="" class="main__nav-link">Цены на услуги</a></li>
+                <li class="main__nav-element"><a href="" class="main__nav-link">Адреса сервисных центров</a></li>
+                <li class="main__nav-element"><a href="" class="main__nav-link">Специальные цены</a></li>
+                <li class="main__nav-element"><a href="" class="main__nav-link">Отзывы</a></li>
+            </ul>
         </nav>
         <section class="content">
             <div class="content__text-box">
@@ -56,7 +60,9 @@
                     </p>
 
                 </div>
-                <a href="" class="content__read-more">Читать далее</a>
+                <div class="content__read-more read-more">
+                    <a href="" class="read-more__link">Читать далее</a>
+                </div>
             </div>
             <picture class="content__image">
                 <source srcset="img/content__image-1120.jpg" media="(min-width: 1120px)">
